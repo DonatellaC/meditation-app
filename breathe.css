@@ -8,19 +8,48 @@ body {
   background-color: #211d1d;
   font-family: "Robot", sans-serif;
   min-height: 100vh;
-  background: url("./images/northern-lights-landscape-vectors.jpg") no-repeat
-    center;
+  background: url("./images/vector-beautiful-landscape-illustration.jpg")
+    no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
 }
 
 h1 {
-  /* margin: 10px 40px 0;
+  margin: 10px;
   display: flex;
-  justify-content: center; */
-  margin-top: 5%;
+  justify-content: center;
   font-size: 40px;
+}
+
+h2 {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 7px;
+  padding: 1.2em 2em;
+  background-image: linear-gradient(45deg, #ffc107 0%, #ff8b5f 100%);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
   color: #fff;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: #591c23;
 }

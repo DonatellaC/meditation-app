@@ -57,7 +57,7 @@ body {
   padding: 30px 20px;
   border-radius: 10px;
   margin: 15px;
-  max-width: 230px;
+  min-width: 230px;
   max-height: 80px;
   cursor: pointer;
 }
@@ -76,13 +76,13 @@ i {
 
 .text h6 {
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0 8px;
   font-weight: 400;
 }
 
 .text p {
   color: #d2d4de;
-  font-size: 11px;
+  font-size: 12px;
   margin: 0;
 }
