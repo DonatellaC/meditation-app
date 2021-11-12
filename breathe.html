@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="breathe.css" />
   </head>
   <body>
+    <!--Header-->
     <h1>Breathe</h1>
+    <h2>Prepare to breathe</h2>
+    <div class="container" id="container">
+      <!--Middle circle-->
+      <div class="circle"></div>
+      <!--Text-->
+      <p id="text">Inhale</p>
+
+      <!--Pointer div-->
+      <div class="pointer-container">
+        <!--Empty span to create pointer circle-->
+        <span class="pointer"></span>
+      </div>
+
+      <!--Gradient circle-->
+      <div class="gradient-circle"></div>
+      <!--Gradient blur-->
+      <div class="gradient-circle-blur"></div>
+    </div>
+
+    <!--Buttons times options-->
     <section class="breathe-options">
-      <h2>Prepare to breathe</h2>
       <div class="buttons">
         <button class="button">3 Times</button>
         <button class="button">5 Times</button>
@@ -18,14 +38,6 @@
       </div>
     </section>
 
-    <section class="circle-container">
-      <div class="circle-inhale"></div>
-      <p id="text-inhale">Inhale</p>
-
-      <div class="circle-hold"></div>
-      <div class="circle-exhale"></div>
-    </section>
-
-    <script src="app.js"></script>
+    <script src="breathe.js"></script>
   </body>
 </html>

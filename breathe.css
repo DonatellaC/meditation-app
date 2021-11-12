@@ -1,20 +1,23 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  overflow: hidden;
 }
 
 body {
-  background-color: #211d1d;
   font-family: "Robot", sans-serif;
-  min-height: 100vh;
   background: url("./images/vector-beautiful-landscape-illustration.jpg")
     no-repeat center center;
-  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: #2d2e2e;
+}
+
+#text {
+  font-size: 35px;
+  color: #2d2e2e;
 }
 
 h1 {
@@ -50,6 +53,113 @@ h2 {
   text-transform: uppercase;
 }
 
-.button:hover {
-  background: #591c23;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1);
+}
+
+.circle {
+  background-color: #fad0c2;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient-circle {
+  background: conic-gradient(
+    #f57986 0%,
+    #ee8892 40%,
+    #dbeee5 40%,
+    #aaf09f 60%,
+    #ffea85 60%,
+    #ffea85 100%
+  );
+  height: 320px;
+  width: 320px;
+  z-index: -3;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.gradient-circle-blur {
+  background: conic-gradient(
+    #e91f33 0%,
+    #ad3541 40%,
+    #78e486 40%,
+    #275e33 60%,
+    #f3db64 60%,
+    #ffea85 100%
+  );
+  height: 320px;
+  width: 320px;
+  z-index: -3;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(15px);
+  top: -10px;
+  left: -10px;
+}
+
+.pointer {
+  background-color: rgb(41, 41, 41);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
 }
