@@ -68,12 +68,6 @@ img {
   margin-right: 15px;
 }
 
-/* i {
-  color: white;
-  width: 30px;
-  margin-right: 6px;
-} */
-
 .text h6 {
   color: white;
   font-size: 15px;
@@ -85,4 +79,15 @@ img {
   color: #d2d4de;
   font-size: 12px;
   margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .meditation-options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 600px;
+    width: 250px;
+  }
 }
